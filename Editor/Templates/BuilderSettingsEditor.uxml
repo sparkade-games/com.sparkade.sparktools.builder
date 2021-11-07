@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="/Packages/com.sparkade.sparktools.builder/Editor/Stylesheets/BuilderSettingsEditor.uss" />
+    <ui:GroupBox name="Platforms" class="platforms-container" style="background-color: rgba(255, 255, 255, 0.08);" />
+    <ui:VisualElement name="BuildButtons" style="align-items: stretch; flex-direction: row; justify-content: flex-end; margin-top: 5px; margin-bottom: 5px; margin-right: 5px; margin-left: 5px;">
+        <ui:Button text="Add Platform" display-tooltip-when-elided="true" name="AddPlatformButton" class="add-platform-button" />
+    </ui:VisualElement>
+    <uie:PropertyField name="IncludedScenes" label="Included Scenes" class="included-scenes" />
+    <ui:TextField label="Output Folder" name="OutputFolderField" class="output-folder">
+        <ui:Button text="..." display-tooltip-when-elided="true" name="OutputFolderButton" class="output-folder-button" style="width: 20px;" />
+    </ui:TextField>
+    <ui:TextField label="Output Pattern" name="OutputPatternField" class="output-pattern">
+        <ui:Button text="?" display-tooltip-when-elided="true" name="PatternHelpButton" class="pattern-help-button" style="width: 20px;" />
+    </ui:TextField>
+    <ui:Toggle label="Development Build" name="DevelopmentBuildToggle" class="development-build-toggle" />
+    <ui:Toggle label="Open Build Folder" name="OpenBuildFolderToggle" class="open-build-folder-toggle" />
+    <ui:VisualElement name="BuildButtons" style="align-items: stretch; flex-direction: row; justify-content: center; margin-top: 5px; margin-bottom: 5px; margin-right: 5px; margin-left: 5px;">
+        <ui:Button text="Build" display-tooltip-when-elided="true" name="BuildButton" class="build-button" />
+        <ui:Button text="Build and Run" display-tooltip-when-elided="true" name="BuildAndRunButton" class="build-and-run-button" />
+        <ui:Button text="Build All" display-tooltip-when-elided="true" name="BuildAllButton" class="build-all-button" />
+    </ui:VisualElement>
+</ui:UXML>

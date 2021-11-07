@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:GroupBox name="Platform" style="background-color: rgba(255, 255, 255, 0.08); padding-right: 3px;">
+        <uie:EnumField label="Build Target" name="BuildTarget" class="build-target" />
+        <ui:TextField picking-mode="Ignore" label="File Extension" name="FileExtension" class="file-extension" />
+        <uie:EnumField label="Output Pattern" name="OutputPattern" class="output-pattern" />
+        <ui:TextField picking-mode="Ignore" label="Override Pattern" name="OverridePattern" class="override-pattern" />
+        <uie:EnumField label="Development Build" name="DevelopmentBuild" class="development-build" />
+        <uie:PropertyField name="ExtraScenes" label="Extra Scenes" class="extra-scenes" style="margin-left: 16px;" />
+        <uie:PropertyField name="ExcludedScenes" label="Excluded Scenes" class="excluded-scenes" style="margin-left: 16px;" />
+        <uie:PropertyField name="AdditionalSymbols" label="Additional Symbols" class="additional-symbols" style="margin-left: 16px;" />
+        <ui:VisualElement name="PlatformButtons" style="flex-direction: row; justify-content: flex-end; margin-top: 5px; margin-bottom: 0;">
+            <ui:Button text="Switch" display-tooltip-when-elided="true" name="SwitchButton" class="switch-button" />
+            <ui:Button text="Delete" display-tooltip-when-elided="true" name="DeleteButton" class="delete-button" style="background-color: rgb(125, 45, 45);" />
+        </ui:VisualElement>
+    </ui:GroupBox>
+</ui:UXML>

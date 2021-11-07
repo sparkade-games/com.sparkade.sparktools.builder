@@ -1,0 +1,19 @@
+{
+    "name": "Sparkade.SparkTools.Builder.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8213f59960e4377409d5fc572d832264",
+        "GUID:1e2c307143dcf58499a7644f65c73243"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
